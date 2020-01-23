@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+    <script type="text/javascript">
+        function validate() {
+            if (document.myForm.Name.value == "" || isNaN(document.myForm.Name.value) || document.myForm.Name.value.length <= 30) {
+                var part = /[a-z]{ 2,30 }/;
+                alert("please provide ur name:");
+                document.myForm.Name.focus();
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+    <style>
+        table {
+            border-collapse: collapse;
+  border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <form name="myForm" action="" onsubmit="validate()" method="post">
+
+                <H1>PERSONAL DETAILS</HR></H1>
+                <table  >
+                    <tr>
+                        <td>Full Name:</td>
+                        <td>
+                            <input type="text" name="Name" id="txtbox1" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Address:</td>
+                        <td>
+                            <textarea rows="4" cols="50">
+
+                </textarea>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+
+                            <input type="radio" name="gender" value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female
+                            <input type="radio" name="gender" value="Trans">TRans
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Home Town</td>
+                        <td>
+                            <select name="Home" id="h">
+                                <option value="HOme">Eluru</option>
+                                <option value="HOme">Vijay</option>
+                                <option value="HOme">Delhi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" name="Pwd" id="pd" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Skills</td>
+                        <td>
+                            <input type="radio" name="Skill" value="C#" />C#
+                            <input type="radio" name="Skill" value="HTML" />HTML
+                            <input type="radio" name="Skill" value="CSS" />CSS
+                        </td>
+                    </tr>
+
+                </table>
+                <center>
+                    <BR /><INPUT id="submit" type="submit" value="Submit" />
+
+                </center>
+
+            </form>
+        </div>
+    </center>
+</body>
+</html>

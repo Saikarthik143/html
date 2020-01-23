@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script language="java Script" type="text/javascript">
+        function disp() {
+            document.write("hello.......welcome to cts")
+        }
+        function add(a, b) {
+            return (a + b);
+           
+        }
+         //disp();//function without returbn
+    </script>
+</head>
+<body onload="disp"> <!--event invoke fun-->
+    <h1 id="t1">Welcome to JavaScript</h1>
+    <br />
+    <h2 id="t2"></h2>
+    <script>
+        document.getElementById("t2").innerHTML = add(10, 20);//fun with return
+
+    </script>
+    <noscript>
+        Script not alloed //when script is deactivate
+    </noscript>
+    <h5>Printing Large</h5>
+    First number<input id="int1" value="" type="text" />
+    Second number<input id="int2" value=""type="text" />
+    <input type="button" value="check" onclick="large()" />
+    <h1 id="res"></h1>
+    <script language="javascript" type="text/javascript">
+        {
+            function large()
+            {
+                var a = parseInt((document.getElementById("int1").value));
+                console.log(a);
+                var b = parseInt((document.getElementById("int2").value));
+                console.log(b);
+                if (a > b) {
+                    document.getElementById("res").innerHTML = (a + " is large");
+                  //  document.write(a + " is large");
+                }
+                else if(a==b){
+                    document.getElementById("res").innerHTML = ("both are large");
+                    //document.write(b + " is large")
+                }
+                else
+                    document.getElementById("res").innerHTML = (b + " is large");
+            }
+        }
+    </script>
+    <script>
+        {// if else 
+            var year = 2020;
+            if (year % 400 == 0)
+                document.write("mill year");
+            else if (year % 4==0 && year % 100 != 0)
+                document.write("leap year");
+            else
+                document.write("not a leap year");
+        }
+    </script>
+    <br />
+    <br />
+    <script language="javascript" type="text/javascript">
+        {
+            var num = prompt("enter week day");
+           //document.write(+" "+num+" "); 
+            switch (num) {
+                case '0': document.write(" Sunday"); break;
+                case '1': document.write(" Monday"); break;
+                case '2': document.write(" Tuesday"); break;
+                case '3': document.write(" wednesday"); break;
+                case '4': document.write(" Thursday"); break;
+                case '5': document.write(" Friday"); break;
+                case '6': document.write(" satday"); break;
+                default: document.write("plz enter o to 6"); break;
+            }
+
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+E:\HTML\ProjectMain\MainPro\obj\Debug\MainPro.csprojAssemblyReference.cache
+E:\HTML\ProjectMain\MainPro\bin\Debug\MainPro.exe.config
+E:\HTML\ProjectMain\MainPro\bin\Debug\MainPro.exe
+E:\HTML\ProjectMain\MainPro\bin\Debug\MainPro.pdb
+E:\HTML\ProjectMain\MainPro\obj\Debug\MainPro.exe
+E:\HTML\ProjectMain\MainPro\obj\Debug\MainPro.pdb

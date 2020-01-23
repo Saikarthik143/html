@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="MYscript.js"></script>
+    <script src="MYscript2.js"></script>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <script>
+        function OuterFun() {
+            var a = 100;
+            function InnerFun() {
+                a++;
+                alert(a);
+            }
+            return InnerFun;
+        }
+        var inner = OuterFun();
+        inner();inner();inner();
+        inner();
+
+    </script>
+</body>
+</html>
